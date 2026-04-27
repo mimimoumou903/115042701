@@ -317,7 +317,7 @@ input, select, textarea {
 
 .voices h2 {
   text-align: center;
-    font-family: "jf openhuninn 2 1"
+  font-family: "jf openhuninn 2 1";
 }
 
 .voice-list {
@@ -350,20 +350,9 @@ input, select, textarea {
   line-height: 1.8;
 }
 
-.voice-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;   /* 讓圖片不變形 */
-  border-radius: 50%;  /* 變圓形 */
-  display: block;
-  margin: 0 auto 25px;
-}
-
 .avatar {
   border: 2px solid #ddd;
 }
-
-
 
 	@media screen and (max-width: 480px) {
 
