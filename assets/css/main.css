@@ -322,8 +322,25 @@ input, select, textarea {
 
 .voice-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr); /* 一列兩個 */
+  gap: 80px 60px; /* 上下間距、左右間距 */
+  max-width: 900px; /* 控制整體寬度，會更精緻 */
+  margin: 0 auto; /* 置中 */
+}
+
+@media (max-width: 600px) {
+  .voice-list {
+    grid-template-columns: 1fr; /* 手機一列一個 */
+    gap: 50px;
+  }
+
+  .voice-card {
+    text-align: center;
+  }
+
+  .voice-card p {
+    text-align: left;
+  }
 }
 
 .voice-card {
